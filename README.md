@@ -19,3 +19,10 @@ Zde se nachází přehled všech kategorií log, které hráč může hádat. Po
 Na tuto stránku se hráč dostane po té, co vybere kategorii, kterou chce hádat. V horní části se zobrazuje logo, které má hráč uhodnout. Uprostřed je nabídka písmen, které je možné použít k hádání. Mezi nimi se skrývá i název té firmy, která se hádá.
 ### Obrázek, který se odkrývá
 Po úspěšném uhodnutí je hráč přesunut na obrazovku, kde se mu postupně odkrývá obrázek. Při každém uhodnutí levelu je odrykta jedna část obrázku. Když je obrázek celý odkrytý, načte se nový, celý zakrytý obrázek.
+
+## Vzhled
+### Nástěnka
+![Vzhled nástěnky](/mock_up/dashboard.png)
+
+### Výběr loga k uhodnutí
+![Vzhled detailního náhledu](/mock_up/clothing_detail.png)

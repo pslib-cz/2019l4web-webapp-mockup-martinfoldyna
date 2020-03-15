@@ -22,7 +22,7 @@ Po úspěšném uhodnutí je hráč přesunut na obrazovku, kde se mu postupně 
 
 ## Vzhled
 ### Nástěnka
-![Vzhled nástěnky](/mock_up/dashboard.png)
+![Vzhled nástěnky](./mockup/dashboard.png)
 
 ### Výběr loga k uhodnutí
-![Vzhled detailního náhledu](/mock_up/clothing_detail.png)
+![Vzhled detailního náhledu](./mockup/clothing_detail.png)

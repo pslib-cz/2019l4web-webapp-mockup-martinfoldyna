@@ -1,0 +1,353 @@
+body {
+  font-family: 'Poppins', serif;
+  padding: 1em;
+}
+
+.outlined {
+  -webkit-text-stroke: .5px black;
+}
+
+header {
+  color: #0984E3;
+  /*font-size: 1rem;*/
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 48px;
+}
+
+.outlined.food {
+  -webkit-text-stroke-color: #E74C3C;
+}
+
+header.food {
+  color: #E74C3C;
+}
+
+header span{
+  display: inline-block;
+  color: transparent;
+}
+
+header.outlined.clothing {
+  color: #0984E3;
+  -webkit-text-stroke-color: #0984E3;
+}
+
+header.outlined.cars {
+  color: #E67E22;
+  -webkit-text-stroke-color: #E67E22;
+}
+
+header.outlined.food {
+  color: #E74C3C;
+  -webkit-text-stroke-color: #E74C3C;
+}
+
+header.outlined.sport {
+  color: #9C88FF;
+  -webkit-text-stroke-color: #9C88FF;
+}
+
+header.outlined.electronics {
+  color: #2ED573;
+  -webkit-text-stroke-color: #2ED573;
+}
+
+main {
+  padding: 2em;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+#groups {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1220px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+#groups .tile {
+  flex-basis: 25%;
+  margin: 10px 1%;
+  border-radius: 30px;
+  width: 297px;
+  height: 365px;
+  position: relative;
+  transition: transform .5s;
+}
+
+#groups .tile:hover {
+  transform: scale(1.05, 1.05);
+}
+
+#groups .tile#cars,
+#guess-keys.cars .key-card {
+  background-color: #E67E22;
+  box-shadow: 0px 11px 40px rgba(230, 126, 34, 0.25);
+}
+
+#groups .tile#clothing,
+#guess-keys.clothing .key-card {
+  background-color: #0984E3;
+  box-shadow: 0px 11px 40px rgba(9, 132, 227, 0.25);
+}
+
+#groups .tile#food,
+#guess-keys.food .key-card {
+  background-color: #E74C3C;
+  box-shadow: 0px 11px 40px rgba(231, 76, 60, 0.25);
+}
+
+#groups .tile#sport,
+#guess-keys.sport .key-card {
+  background-color: #9C88FF;
+  box-shadow: 0px 11px 40px rgba(156, 136, 255, 0.25);
+}
+
+#groups .tile#electronics,
+#guess-keys.electronics .key-card {
+  background-color: #2ED573;
+  box-shadow: 0px 11px 40px rgba(46, 213, 115, 0.25);
+}
+
+#groups .tile#electronics h3{
+  font-size: 40px;
+}
+
+#groups .tile h3 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.035em;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+#groups .tile .img-wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 11px 40px rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
+  width: 90%;
+  height: 225px;
+  position: relative;
+  left: 50%;
+  top: 13px;
+  transform: translateX(-50%);
+}
+
+#groups .tile .img-wrapper img {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*******
+
+  LOGOS CATEGORY
+
+*******/
+#logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-logo-wrapper {
+  position: relative;
+  align-self: center;
+  flex: 1 0 21%;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: .25rem;
+  transition: background-color .5s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.success-overlay {
+  visibility: hidden;
+}
+
+.image-logo-wrapper.guessed a{
+  filter: grayscale(100);
+}
+
+.success-overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-logo-wrapper.guessed .success-overlay{
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.21);
+}
+
+#logos.clothing .image-logo-wrapper:hover {
+  background-color: rgba(9, 132, 227, 0.21);
+}
+
+#logos.cars .image-logo-wrapper:hover {
+  background-color: rgba(230, 126, 34, 0.21);
+}
+
+#logos.food .image-logo-wrapper:hover {
+  background-color: rgba(231, 76, 60, 0.21);
+}
+
+#logos.sport .image-logo-wrapper:hover {
+  background-color: rgba(156, 136, 255, 0.21);
+}
+
+#logos.electronics .image-logo-wrapper:hover {
+  background-color: rgba(46, 213, 115, 0.21);
+}
+
+/*******
+
+  LOGO DETAIL
+
+*******/
+.keyboard-layout {
+  display: flex;
+  justify-content: space-around;
+}
+
+#guess-keys {
+  width: 50%;
+  margin: 3em auto;
+}
+
+.key-card {
+  border-radius: 30px;
+  box-shadow: 0px 11px 40px rgba(195, 202, 207, 0.25);
+}
+
+#guess-keys .key-card {
+  color: #fff;
+}
+
+#big-keyboard {
+  flex-wrap: wrap;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.keyboard-layout .key-card {
+  flex-basis: 18%;
+  margin: 0 10px;
+  text-align: center;
+
+}
+
+#big-keyboard .key-card{
+  flex-basis: 10%;
+  background-color: #DEE6E9;
+  margin: .5%;
+}
+
+#big-keyboard.cars .key-card {
+  color: #E67E22;
+}
+
+#big-keyboard.clothing .key-card {
+  color: #0984E3;
+}
+
+#big-keyboard.electronics .key-card {
+  color: #2ED573;
+}
+
+#big-keyboard.food .key-card {
+  color: #E74C3C;
+}
+
+#big-keyboard.sport .key-card {
+  color: #9C88FF;
+}
+
+.key-card p {
+  justify-self: center;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+/*******
+
+  REVEAL IMAGE
+
+*******/
+
+#reveal-logo img{
+  display: block;
+  width: 35%;
+  margin: 4em auto;
+  max-height: 28vh;
+}
+
+#reveal-image-wrapper {
+  width: 80vw;
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  border-radius: 30px;
+}
+
+#reveal-image-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#reveal-image-wrapper .reveal-image-cover {
+  box-sizing: border-box;
+  flex-basis: 20%;
+  border: 2px solid#fff;
+  height: 25%;
+}
+
+#reveal-image-wrapper.cars .reveal-image-cover {
+  background-color: #E67E22;
+}
+
+#reveal-image-wrapper.clothing .reveal-image-cover {
+  background-color: #0984E3;
+}
+
+#reveal-image-wrapper.electronics .reveal-image-cover {
+  background-color: #2ED573;
+}
+
+#reveal-image-wrapper.food .reveal-image-cover {
+  background-color: #E74C3C;
+}
+
+#reveal-image-wrapper.sport .reveal-image-cover {
+  background-color: #9C88FF;
+}
+
+#reveal-image-wrapper .reveal-image-cover.revealed {
+  background-color: transparent;
+  border-color: transparent;
+}
+
